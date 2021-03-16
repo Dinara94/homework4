@@ -31,11 +31,10 @@ export default function Todos() {
 
   const createItem = (newItem) => {
     newItem.completed = false;
-
     createTodo(newItem).then((data) => {
-      setList({ ...list, data });
+      setList([...list, data]);
     });
-  };
+};
 
   return (
     <>

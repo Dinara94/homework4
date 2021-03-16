@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TodoListItem from "./TodoListItem";
 
 export default function TodoList({list, onToggle, onDelete}) {
+
   return (
     <ul>
       {list.map((item) => (
